@@ -1,6 +1,19 @@
 body{background-color: #A0522D;
+	font-family: arial, sans-serif;
 
 
+	}
+	
+	header, footer{
+		width: 100%;
+		background-color: rgba(176,224,230,0.5);
+		padding: 15px;
+	}
+
+	.container{
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	h1{color: #fff;
@@ -10,14 +23,31 @@ body{background-color: #A0522D;
 
 	}
 
+	ol li{
+
+		text-decoration: underline;
+		color: #fff;
+		font-weight: bolder;
+		margin-top: 5%;
+		margin-bottom: 5%;
+
+	}
+
 	
 
 	p{border: 2px solid #fff;
 		color: #fff;
 		font-size: 20px;
 		font-weight: bold;
+		margin-top: 5%;
+		margin-bottom: 5%;
 
 
+	}
+
+	.centro{
+		color: #B0E0E6;
+		text-align: center;
 	}
 
 	figure{text-align: center;
@@ -48,4 +78,14 @@ a:active {
   color: yellow;
   background-color: transparent;
   text-decoration: underline;
+}
+table{
+  
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th{
+	border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
 }
