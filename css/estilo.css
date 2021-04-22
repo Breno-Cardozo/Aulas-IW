@@ -16,7 +16,14 @@ body{background-color: #A0522D;
 		margin-right: auto;
 	}
 
-	h1{color: #fff;
+	h1{
+		font-size: 1.9em;
+		font-family: 'Bangers', cursive;
+
+	}
+
+
+	.titulos{color: #fff;
 		text-align: center;
 		font-style: italic;
 
@@ -30,6 +37,7 @@ body{background-color: #A0522D;
 		font-weight: bolder;
 		margin-top: 5%;
 		margin-bottom: 5%;
+		
 
 	}
 
@@ -37,10 +45,12 @@ body{background-color: #A0522D;
 
 	p{border: 2px solid #fff;
 		color: #fff;
-		font-size: 20px;
+		font-size: 1.2em;
 		font-weight: bold;
 		margin-top: 5%;
 		margin-bottom: 5%;
+		
+		
 
 
 	}
