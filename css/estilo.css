@@ -1,4 +1,4 @@
-body{background-color: #A0522D;
+body{background-color: #1C1C1C;
 	font-family: arial, sans-serif;
 	
 
@@ -6,7 +6,7 @@ body{background-color: #A0522D;
 	
 	header, footer{
 		background-color: rgba(105,105,105);
-		padding: 1%;
+		padding: 0.5%;
 		position: relative;
 		display: flex;
 		flex-direction: column;
@@ -43,49 +43,44 @@ body{background-color: #A0522D;
 
 
 	.container{
-		margin-top: 40%;
 		width: 80%;
 		margin-left: auto;
 		margin-right: auto;
 		position: relative;
 	}
 
-	@media screen and (max-width: 599px){
-		.container{
-			margin-top: 65%;
-		}
-	}
+	#sobre{
 
-
-@media screen and (min-width: 600px){
-	.container{
-		margin-top: 40%;
-	}
-
-
-@media screen and ( min-width: 768px){
-	.container{
-		margin-top: 20%;
-	}
-	header{
-		background-color: rgba(105,105,105);
-		flex-direction: row;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		position: relative;
+		margin:0 auto;
+
+	}
+	#sobre .sobre{
+		text-align: center;
 	}
 
-	.menuopcoes{
-		position: absolute;
-		right: 5%;
-		top: 50%;
+	#galeria{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		margin:2px 2px;		
 	}
-	.menuopcoes ul li{
-		display: inline;
+	#galeria .galeria{
+		margin: 4px 4 px;
 	}
 
-}
+	.imgsobre{
+		width: 20%;
+		height: 20%;
+	}
 
 
-	
+
+
 
 	h1{
 		font-size: 1.9em;
@@ -104,18 +99,6 @@ body{background-color: #A0522D;
 
 	}
 
-	.listasetextos{
-		text-decoration: underline;
-		color: #fff;
-		font-weight: bolder;
-		margin-top: 5%;
-		margin-bottom: 5%;
-		font-size: 1em;
-
-	}
-
-	
-
 	p{
 		color: #fff;
 		font-size: 1.2em;
@@ -126,26 +109,56 @@ body{background-color: #A0522D;
 		
 
 
+	.listasetextos{
+		text-decoration: underline;
+		color: #fff;
+		font-weight: bolder;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		font-size: 1em;
+
 	}
 
-	.centro{
-		color: #B0E0E6;
-		text-align: center;
-	}
-
-	
-		
-	
 
 	.imgtexto{
 		border: 5px dashed #fff;
 		width: 40%;
 	}
 
-	.imglogo{
-		width: 20%
-		
+	.fundo{
+		background:#696969;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 3%;
+		font-size: 1.2em;
 	}
+
+	.distancia{
+		margin-top: 2%;
+		margin-bottom: 2%;
+
+	}
+
+	input[type=text], select, textarea{
+		width: 85%;
+		padding: 12px 20px;
+		display: inline-block;
+		border-radius: 70px;
+
+	}
+	input[type=submit] {
+  width: 100%;
+  background-color:#D2691E;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 70px;
+  cursor: pointer;
+}
+
+
+
 
 	a:link {
   color: green;
@@ -170,16 +183,22 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
+
 table{
   
   border-collapse: collapse;
-  width: 100%;
+  width: 100%; 
 }
 td, th{
 	border: 1px solid #dddddd;
   text-align: left;
-  padding: 8px;
+  padding: 10px;
 }
+
+.centro{
+
+		text-align: center;
+
 
 #rcorners1 {
   border-radius: 25px;
@@ -188,14 +207,82 @@ td, th{
   width: 200px;
   height: 150px;
   margin-left: auto;
-		margin-right: auto;
+margin-right: auto;
 
 }
 
-div {
+.item{
+
+	position: relative;
+	margin: 10px 0px;
+}
+
+.item::before{
+content: ;
+position:relative;
+left: 0;
+top:0;
+padding: 10px 15px;
+background-image:url("../img/img.png");
+}
+
+ 
+	@media screen and (max-width: 599px){
+		.container{
+			margin-top: 65%;
+		}
+	}
+
+
+@media screen and (min-width: 600px){
+	.container{
+		margin-top: 40%;
+	}
+}
+
+
+
+@media screen and ( min-width: 768px){
+	.container{
+		margin-top: 20%;}
+	header{
+		background-color: rgba(105,105,105);
+		flex-direction: row;
+		position: relative;
+		height: 100px;
+	}
+}	
+
+	.menuopcoes{
+		position: absolute;
+		right: 5%;
+		top: 45;
+	}
+}
+	ul li ol li {
+		display: inline;
+		margin-left: 10px;
+	}
+}
+
+	#sobre{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
+
+	#sobre{
+		width: 100%;
+		text-align: center;
+	}
+}
+
+	#sobre .sobre{
+		width: 25%;
+		text-align: center;
+	}
+
+
+
 	
-  text-align: center;
-  background-color: gray;
-  box-shadow: 10px 10px;
 }
-
